@@ -196,7 +196,7 @@ public class conexion {
 				
 				String cadena = "::::::::::::::::::LIBRO::::::::::::::::::::::::\n";
 				while(rs.next()) {
-					cadena += "codigo: "+rs.getString(1)+"\nPrestado: "+rs.getString(2)+"\nEditorial: "+rs.getString(3)+"\nAutor: "+rs.getString(4)+"\nTitulo: "+rs.getString(5)+"\n Año de publicacion: "+rs.getString(6)+"\n\n";
+					cadena += "Codigo: "+rs.getString(1)+"\nPrestado: "+rs.getString(2)+"\nEditorial: "+rs.getString(3)+"\nAutor: "+rs.getString(4)+"\nTitulo: "+rs.getString(5)+"\n Aï¿½o de publicacion: "+rs.getString(6)+"\n\n";
 				}
 				
 				
@@ -206,7 +206,7 @@ public class conexion {
 				
 				cadena = cadena+"::::::::::::::::::::::::MANGA:::::::::::::::::::::::::\n";
 				while(rs.next()) {
-					cadena += "Codigo: "+rs.getString(1)+"\nAnime: "+rs.getString(2)+"\nEditorial: "+rs.getString(3)+"\nAutor: "+rs.getString(4)+"\nTitulo: "+rs.getString(5)+"\nAño de publicacion: "+rs.getString(6)+"\nIdioma: "+rs.getString(7)+"\n";
+					cadena += "Codigo: "+rs.getString(1)+"\nAnime: "+rs.getString(2)+"\nEditorial: "+rs.getString(3)+"\nAutor: "+rs.getString(4)+"\nTitulo: "+rs.getString(5)+"\nAï¿½o de publicacion: "+rs.getString(6)+"\nIdioma: "+rs.getString(7)+"\n";
 				}
 				
 				//mostrando Articulos
@@ -215,7 +215,7 @@ public class conexion {
 				
 				cadena = cadena+"::::::::::::::::::::::::ARTICULOS:::::::::::::::::::::::::\n";
 				while(rs.next()) {
-					cadena += "Codigo: "+rs.getString(1)+"\n "+rs.getString(2)+"          "+rs.getString(3)+"          "+rs.getString(4)+"          "+rs.getString(5)+"          "+rs.getString(6)+"\n";
+					cadena += "Codigo: "+rs.getString(1)+"\nPrestado: "+rs.getString(2)+"\nEditorial: "+rs.getString(3)+"\nAutor: "+rs.getString(4)+"\nTitulo: "+rs.getString(5)+"\nAÃ±o de publicacion: "+rs.getString(6)+"\n";
 					System.out.println();
 				}
 				
@@ -224,7 +224,7 @@ public class conexion {
 				cadena = cadena+"::::::::::::::::::::::::REVISTA:::::::::::::::::::::::::\n";
 				
 				while(rs.next()){
-					cadena += rs.getString(1)+"          "+rs.getString(2)+"          "+rs.getString(3)+"          "+rs.getString(4)+"          "+rs.getString(5)+"          "+rs.getString(6)+"          "+rs.getString(7)+"          "+rs.getString(8)+"\n";
+					cadena += "Codigo: "+rs.getString(1)+"\n Numero: "+rs.getString(2)+"\nMes: "+rs.getString(3)+"\nVolumen: "+rs.getString(4)+"\nEditorial: "+rs.getString(5)+"\nAutor: "+rs.getString(6)+"\nTitulo: "+rs.getString(7)+"\nAÃ±o de publicacion: "+rs.getString(8)+"\n";
 				}
 				JOptionPane.showMessageDialog(null,cadena);
 				
